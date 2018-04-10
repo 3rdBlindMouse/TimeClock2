@@ -49,6 +49,8 @@ namespace TimeClock.Forms
 
         private void button6_Click(object sender, EventArgs e)
         {
+            Roster roster = new Roster();
+            roster.Show();
 
         }
 

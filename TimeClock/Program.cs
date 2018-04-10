@@ -29,6 +29,12 @@ namespace TimeClock
             //Application.Run(new Main());
             //Application.Run(new NumPad());
             //Application.Run(new LogoutForm2());
+
+
+            //Application.Run(new TimeTable());
+
+            //Application.Run(new TestForm());
+
             SelectUserForm form1 = new SelectUserForm();
             form1.ShowDialog();
         }
