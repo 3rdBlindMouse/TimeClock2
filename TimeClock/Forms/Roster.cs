@@ -55,14 +55,25 @@ namespace TimeClock.Forms
         void MyButtonClick(object sender, EventArgs e)
         {
             Button button = sender as Button;
+            
 
             List<Button> buttonList = getButtonList(button);
             int indexOfValue = buttonList.IndexOf(button);
             //MessageBox.Show(indexOfValue.ToString());
 
-           
 
-            MessageBox.Show(button.Name);
+
+            //MessageBox.Show(button.Name);
+            // get time as string
+            string bName = button.Name;
+            // this is time as a whole
+            MessageBox.Show(bName.Substring(3));
+            //this is the hour portion
+            MessageBox.Show(bName.Substring(3, bName.Length - 5));
+            // this is the minute portion
+            MessageBox.Show(bName.Substring(bName.Length - 2));
+
+
             SelectUserForRoster rosterUsers = new SelectUserForRoster();
             rosterUsers.ShowDialog();
 
@@ -112,6 +123,11 @@ namespace TimeClock.Forms
             return staffColour;
         }
 
+        /// <summary>
+        /// Find out which column button pressed is from, allows use of indexing of list
+        /// </summary>
+        /// <param name="button"></param>
+        /// <returns></returns>
         private List<Button> getButtonList(Button button)
         {
             List<Button> output = new List<Button>();
