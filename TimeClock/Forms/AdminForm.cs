@@ -50,8 +50,7 @@ namespace TimeClock.Forms
         private void button6_Click(object sender, EventArgs e)
         {
             Roster roster = new Roster();
-            roster.Show();
-
+            roster.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)

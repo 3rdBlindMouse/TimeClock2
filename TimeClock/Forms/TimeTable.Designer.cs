@@ -10,11 +10,6 @@ namespace TimeClock.Forms
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        // count for button numbers
-        private int but = 1;
-
-        
-
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>

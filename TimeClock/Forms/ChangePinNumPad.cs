@@ -9,7 +9,7 @@ namespace TimeClock
     {
 
         int numCount = 0;
-        int pinSets = 0;
+       // int pinSets = 0;
         StringBuilder pass = new StringBuilder();
         StaffModel sm = new StaffModel();
         internal bool passwordValid;
